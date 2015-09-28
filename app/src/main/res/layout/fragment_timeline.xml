@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include android:id="@+id/toolbar_top" layout="@layout/toolbar_top"/>
+    <include android:id="@+id/toolbar_bottom" layout="@layout/toolbar_bottom"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/timeline_refresher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_top"
+        android:layout_above="@id/toolbar_bottom"
+        >
+        <ListView android:id="@+id/timeline_list"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:divider="#e1e8ed"
+                  android:dividerHeight="1dp"
+                  android:drawSelectorOnTop="false"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView android:id="@+id/timeline_empty"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal|center_vertical"
+              android:text="@string/no_tweets"/>
+
+</RelativeLayout>

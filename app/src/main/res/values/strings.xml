@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TwitterTest</string>
+    <string name="login_error">Error. Try again</string>
+    <string name="title_primary">Primary</string>
+    <string name="title_map">Map</string>
+    <string name="title_profile">Profile</string>
+    <string name="no_tweets">No Tweets</string>
+</resources>
